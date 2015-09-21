@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #555;
+}
+h1 {
+  margin: 0 0 30px 0;
+  padding: 0;
+  color: #fff;
+}
+.scroller {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.comic {
+  position: relative;
+
+  .rows {
+    padding: 15px;
+    background: #fff;
+
+    .row {
+      display: flex;
+
+      .panel {
+        flex: auto;
+        margin: 15px;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 200ms ease-out;
+
+        &.show {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
