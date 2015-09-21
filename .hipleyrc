@@ -1,5 +1,6 @@
 {
   "vendors": [
+    "autobind-decorator",
     "randomcolor",
     "react"
   ]
