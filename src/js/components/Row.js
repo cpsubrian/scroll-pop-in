@@ -35,7 +35,7 @@ class Row extends React.Component {
     let show = false
     return this.panels.map((panel, i) => {
       if (this.state.bounds) {
-        show = (this.props.scrollY - (window.innerHeight / (4 - (i * i))) > this.state.bounds.top
+        show = (this.props.scrollY - (window.innerHeight / (4 - i))) > this.state.bounds.top
       }
       return <Panel color={panel.color} show={show}/>
     })
